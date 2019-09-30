@@ -25,10 +25,27 @@
 
 			ctx.lineTo(x,y);
 			ctx.lineWidth=2;
-			ctx.strokeStyle="green";
-			ctx.fill();
+			ctx.strokeStyle="black";
 			ctx.stroke();
 		}
+					 
+	window.addEventListener("keydown",checkKeyPress,false);
+					 
+	function checkKeyPress(key) {
+		if (key.keyCode == "12") {
+			ctx.fillStyle = 'maroon';
+			ctx.fill(); 
+		}
+		   ctx.beginPath();
+		   var x=e.offsetX;
+		   var y=e.offsetY;
+		   ctx.lineTo(x,y);
+		   ctx.lineWidth="2";
+		   ctx.strokeStyle='black';
+	           ctx.stroke();
+				    }
+	}
+		   
 
 	</script>
 
