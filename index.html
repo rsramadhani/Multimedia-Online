@@ -1,92 +1,265 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-    font-family: "Lato", sans-serif;
-}
 
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
+  <title> Praktikum Multimedia Online </title>
 
-.sidenav a:hover {
-    color: #f1f1f1;
-}
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-#main {
-    transition: margin-left .5s;
-    padding: 16px;
-}
+  <!-- Custom styles for this template -->
+  <link href="css/grayscale.min.css" rel="stylesheet">
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-</style>
 </head>
-<body>
 
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="Praktikum1_1700016103.html"> Praktikum 1 - Canvas HTML </a>
-  <a href="Praktikum2_1700016103.html"> Praktikum 2 - Interaktifitas </a>
-  <a href="Praktikum3_1700016103.html"> Praktikum 3 - Vector Patern </a>    
-  <a href="Praktikum4_1700016103.html"> Praktikum 4 - Puzzle Project </a>
-  <a href="Praktikum5_1700016103.html"> Praktikum 5 - Moton Tween </a>
-  <a href="Praktikum6_1700016103.html"> Praktikum 6 - Animated Guestbook </a>
-  <a href="Praktikum7_1700016103.html"> Praktikum 7 - Audio Visualizer </a>
-  <a href="Praktikum8_1700016103.html"> Praktikum 8 - Online Audio Recording </a>
-  <a href="Praktikum9_1700016103.html"> Praktikum 9 - Image Manipulating </a>
-  <a href="Praktikum10_1700016103.html"> Praktikum 10 - Online Photo Capturing </a> 
-</div>
+<body id="page-top">
 
-<div id="main">
-  <center><h1>Hasil Praktikum Multimedia Online</h1></center>
-  <br><br><h2>Rosi Ramadhani</h2>
-  <h3>1700016103</h3></br></br>
-  <body style="background-color:#D3D3D3;"></body>
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Open </span>
-</div>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"></a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-<script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "400px";
-    document.getElementById("main").style.marginLeft = "400px";
-}
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+      <div class="mx-auto text-center">
+        <h1 class="mx-auto my-0 text-uppercase">Practicum</h1>
+        <h2 class="text-white-50 mx-auto mb-5 text-uppercase">Multimedia Online</h2>
+        <h2 class="text-white-50 mx-auto mt-2 mb-5">Rosi Ramadhani - 1700016103</h2>
+        <a href="#projects" class="btn btn-primary js-scroll-trigger">Get Started</a>
+      </div>
+    </div>
+  </header>
 
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-}
-</script>
-   
+  <!-- About Section -->
+  <section id="about" class="about-section text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2 class="text-white mb-10">Multimedia Online</h2>
+          <p class="text-white-50">This is a page that contains the results of online multimedia practicum</p>
+        </div>
+      </div>
+      <img src="img/ipad.png" class="img-fluid" alt="">
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section bg-light">
+    <div class="container">
+
+      <!-- Project Row 1 -->
+      <div class="row justify-content-center no-gutters mb-5">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="img/canvas.jpg" alt="">
+        </div>
+        <div class="col-lg-6">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+              <h4><a href="Praktikum1_1700016103.html"> Praktikum 1 - Canvas HTML </a> </h4>
+              <p class="mb-0 text-white-50">This section discusses the basis of using HTML canvas as a medium for creating
+              various kinds of web-based multimedia elements.</p>
+                <hr class="d-none d-lg-block mb-0 ml-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Row 2 -->
+      <div class="row justify-content-center no-gutters mb-5">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="img/interaktifitas.jpg" alt="">
+        </div>
+        <div class="col-lg-6 order-lg-first">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-right">
+                <h4><a href="Praktikum2_1700016103.html"> Praktikum 2 - Interactivity </a> </h4>
+                <p class="mb-0 text-white-50">This section learns about interactivity in web applications using pointers.
+                It is expected that students can understand the event using a mouse and keyboard as well
+                take input values ​​from both devices to be developed into an application
+                simple drawing.</p>
+                <hr class="d-none d-lg-block mb-0 mr-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Project Row 3 -->
+      <div class="row justify-content-center no-gutters mb-5">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="img/Pattern.jpg" alt="">
+        </div>
+        <div class="col-lg-6">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+              <h4><a href="Praktikum3_1700016103.html"> Praktikum 3 - Vector Pattern </a> </h4>
+              <p class="mb-0 text-white-50">Web-based multimedia can be used for various purposes. One of them
+                is to create digital art content. This section trains students to create content
+                digital art uses vector canvas that is programmatically created using the concept
+                looping in javascript..</p>
+                <hr class="d-none d-lg-block mb-0 ml-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Project Row 4 -->
+     <div class="row justify-content-center no-gutters mb-5">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="img/puzzle.jpg" alt="">
+        </div>
+        <div class="col-lg-6 order-lg-first">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-right">
+                <h4><a href="Praktikum4_1700016103.html"> Praktikum 4 - Puzzle Project </a> </h4>
+                <p class="mb-0 text-white-50">
+                One interactivity using event pointer that can be done by user is
+                do drag & drop. This activity can be applied to a variety of needs
+                for example editing objects in a graphic editor or arranging objects as in
+                puzzle game. This section trains students to apply the concept of interactivity to
+                make a simple puzzle application.</p>
+                <hr class="d-none d-lg-block mb-0 mr-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- Signup Section -->
+  <section id="signup" class="signup-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-lg-8 mx-auto text-center">
+
+          <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+          <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+
+          <form class="form-inline d-flex">
+            <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
+            <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section bg-black">
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fab fa-instagram text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Instagram</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">@rsramadhani</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-envelope text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Email</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">
+                <a href="#">rosi1700016103@webmail.uad.ac.id</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-mobile-alt text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Phone</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">+62 (8) 53-2796-9195</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="social d-flex justify-content-center">
+        <a href="#" class="mx-2">
+          <i class="fab fa-twitter "></i>
+        </a>
+        <a href="#" class="mx-2">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="#" class="mx-2">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black small text-center text-white-50">
+    <div class="container">
+      Copyright &copy; Rosi Ramadhani 2019
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/grayscale.min.js"></script>
+
 </body>
+
 </html>
+
