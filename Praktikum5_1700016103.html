@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <title>Animation - Tween Motion</title>
-   <head>
-      <style type="text/css">
-         body{
-            margin:0;
-         }         
-         canvas{
-            background-color: #cccc;
-         }
-      </style>
-   <body>      
+<head>
+  <title>Interaktifitas</title>
+</head>
+
+<style type="text/css" media="screen">
+  canvas{
+    background-color: #ccc;
+  }
+</style>
+<body>     
         
 <script>
-var obj=[], objNum=80, color=['#00FFFF','#000080','#808080','#000000'];
+var obj=[], objNum=80, color=['#40E0D0','#191970','#808080','#000000'];
 function startGame() {
     for(var i=0; i<objNum; i++)
     {
-      var pos=Math.floor(Math.random()*800);
+      var pos=Math.floor(Math.random()*1000);
       var speed=Math.floor(Math.random()*15)+1;
       var clr=Math.floor(Math.random()*10);
       obj[i]= new component(5, 60, color[clr], pos, 0,speed);
@@ -29,7 +27,7 @@ function startGame() {
 var myGameArea = {
     canvas : document.createElement("canvas"),
     start : function() {
-        this.canvas.width = 800;
+        this.canvas.width = 900;
         this.canvas.height = 450;
         this.context = this.canvas.getContext("2d");
         document.body.insertBefore(this.canvas, document.body.childNodes[0]);
@@ -56,8 +54,8 @@ function updateGameArea() {
     for(var i=0; i<objNum;i++)
     {
       obj[i].y+=obj[i].speed;
-      if(obj[i].y>400){
-         var pos=Math.floor(Math.random()*800);
+      if(obj[i].y>500){
+         var pos=Math.floor(Math.random()*1000);
          var speed=Math.floor(Math.random()*10)+1;
          obj[i].y=0;
          obj[i].x=pos;
