@@ -13,13 +13,12 @@ var mouse = {
 var maxRadius = 40;
 var minRadius = 2;
 
-var colorArray = [
-'#5F9EA0',
+var colorArray = 
+['#5F9EA0',
 '#5F6A6A',
 '#C0C0C0',
 '#ADD8E6',
-'#008080',
-]
+'#008080']
 
 window.addEventListener('mousemove', 
     function(event){
