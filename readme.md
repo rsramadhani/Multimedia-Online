@@ -62,7 +62,7 @@ Contoh dari set :
 
 Perpustakaan "dart: collection" menyediakan kelas yang memungkinkan berbagai implementasi koleksi Dart. 
 
-##### 1.	Hashmap
+#### 1.	Hashmap
 
 HashMap adalah implementasi peta berbasis hash table. Saat Anda melakukan iterasi melalui kunci atau nilai HashMap, Anda tidak bisa mengharapkan pesanan tertentu. 
 
@@ -82,7 +82,7 @@ Contoh dari hashmap :
     print('Map after adding  entries :${accounts}'); 
     }
 
-##### 2.	Hashset
+#### 2.	Hashset
 
 HashSet adalah implementasi Set berbasis tabel hash yang tidak teratur\
 
