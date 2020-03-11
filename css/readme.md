@@ -143,7 +143,7 @@ Statefull Widget adalah widget yang digunakan untuk menampilkan data-data yang d
       displayedString = strings[counter];
       counter = counter < 2 ? counter+1 : 0;
     });
-  }
+    }
 
        @override
     Widget build(BuildContext context){
