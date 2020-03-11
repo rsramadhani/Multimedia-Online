@@ -41,49 +41,133 @@ Scaffold adalah widget utama untuk membuat sebuah halaman pada flutter, scaffold
 
 Stateless Widget adalah widget yang berfungsi untuk menampilkan hal-hal yang sifatnya statis mudahnya setelah data ditampilkan maka kita tidak akan merubahnya lagi.Untuk membuatnya kita cukup mengetikkan stl lalu akan ada pilihan untuk membuatnya.
 
-      class MyApp extends StatelessWidget {
-     @override
-        Widget build(BuildContext context) {
-    return MaterialApp(
-      title: "Shopping Bag",
-      theme: ThemeData(
-          primarySwatch: Colors.pink,
-          accentColor: Colors.purpleAccent,
-          textTheme: ThemeData.light().textTheme.copyWith(
-              title: TextStyle(fontSize: 15, fontWeight: FontWeight.bold))),
-      home: Home(),
-          );
-        }
-        }
+   import 'package:flutter/material.dart';
+
+    void main() {
+    runApp(new MaterialApp(
+    home: new MyStatelessWidget()
+        ));
+    }
+
+    class MyStatelessWidget extends StatelessWidget {
+        @override
+    Widget build(BuildContext context){
+    return new Scaffold(
+      appBar: new AppBar(title: new Text("Stateless Widget")),
+      body: new Container(
+        //adding padding around card
+        padding: new EdgeInsets.all(20.0),
+        child: new Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: <Widget>[
+            // new Text("Hey"),
+            // new Text("My name"),
+            // new Text("Is Raunak")
+
+            new MyCard(
+              title: new Text("I love Flutter", style: new TextStyle(fontSize: 20.0)),
+              icon: new Icon(Icons.favorite, size: 40.0, color: Colors.redAccent)
+            ),
+            new MyCard(
+              title: new Text("I love Donuts", style: new TextStyle(fontSize: 20.0)),
+              icon: new Icon(Icons.donut_large, size: 40.0, color: Colors.brown)
+            ),
+            new MyCard(
+              title: new Text("I see you", style: new TextStyle(fontSize: 20.0)),
+              icon: new Icon(Icons.visibility, size: 40.0, color: Colors.blue)
+                       )
+                      ]
+                     )
+                    )
+                );
+             }
+           }
+
+        class MyCard extends StatelessWidget {  
+          MyCard({this.title, this.icon});
+
+          final Widget title;
+          final Widget icon;
+
+         @override
+        Widget build(BuildContext context){
+        return new Container(
+
+         padding: new EdgeInsets.only(bottom: 20.0),
+             child: new Card(
+             child: new Container(
         
+          padding: new EdgeInsets.all(15.0),
+          child: new Column(
+          children: <Widget>[
+              // new Text("I love Flutter"),
+              // new Icon(Icons.favorite)
+
+              this.title,
+              this.icon
+                       ]
+                     )
+                    ) 
+                  )
+              );
+            }
+           }
+
  <img src="images/stateless.jpg">
         
 ### 3. Statefull
 
 Statefull Widget adalah widget yang digunakan untuk menampilkan data-data yang dinamis atau data yang kita telah tampilkan sewaktu-waktu dapat mengalami perubahan.Sedangkan untuk statefull kita cukup ketikkan stf lalu akan ada pilihan untuk membuatnya.
 
-      class Home extends StatefulWidget {
-    @override
-     _HomeState createState() => _HomeState();
-    }
+    import 'package:flutter/material.dart';
 
-    class _HomeState extends State<Home> {
-     @override
-    Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("Daftar Belanjaan"),
-      ),
-      body: SingleChildScrollView(
-        child: Column(
-          children: <Widget>[
-            //NANTINYA BERISI WIDGET
-               ],
-              ),
-             ),
-         );
+    void main() {
+        runApp(new MaterialApp(
+    home: new AwesomeButton()
+            ));
         }
-      }
+    
+    class AwesomeButton extends StatefulWidget {
+       @override
+     AwesomeButtonState createState() => new AwesomeButtonState();
+        }
+
+    class AwesomeButtonState extends State<AwesomeButton> {
+
+    int counter = 0;
+    List<String> strings = ["Flutter", "Is", "Awesome"];
+        String displayedString = "";
+
+      void onPressed(){
+    setState(() {
+      displayedString = strings[counter];
+      counter = counter < 2 ? counter+1 : 0;
+    });
+  }
+
+       @override
+    Widget build(BuildContext context){
+    return new Scaffold(
+      appBar: new AppBar(title: new Text("Stateful Widget!"), backgroundColor: Colors.deepOrange),
+      body: new Container(
+        child: new Center(
+          child: new Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              new Text(displayedString, style: new TextStyle(fontSize: 30.0, fontWeight: FontWeight.bold)),
+              new Padding(padding: new EdgeInsets.all(15.0)),
+              new RaisedButton(
+                child: new Text("Press me!", style: new TextStyle(color: Colors.white, fontStyle: FontStyle.italic, fontSize: 20.0)),
+                color: Colors.grey,
+                  onPressed: onPressed
+                      )
+                  ]
+                 )
+                )
+             )
+          );
+         }
+       }
       
 <img src="images/statefull.jpg">
       
